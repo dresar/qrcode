@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generator QR Code dengan banyak fitur, mendukung QRIS Indonesia, gambar, link, dan berbagai penyesuaian">
+    <meta name="keywords" content="QR code, QRIS, generator, Indonesia, pembayaran digital">
+    <meta name="author" content="QR Generator Pro">
+    <title>QR Generator Pro - Penghasil QR Code & QRIS Super Lengkap</title>
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- AOS Animation Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        
+        <!-- Swiper Slider -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.css">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="placeholder-logo.png" alt="QR Generator Pro Logo" id="main-logo">
+                <h1>QR Generator Pro</h1>
+            </div>
+            
+            <!-- Hamburger Menu Toggle (For Mobile) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <nav class="main-navigation" id="main-navigation">
+                <ul class="nav-menu">
+                    <li><a href="#fitur">Fitur</a></li>
+                    <li><a href="#generate">Buat QR</a></li>
+                    <li><a href="#templates">Template</a></li>
+                    <li><a href="#tutorial">Tutorial</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="#settings-modal" class="modal-trigger">Pengaturan</a></li>
+                    <li><a href="#help-modal" class="modal-trigger">Bantuan</a></li>
+                </ul>
+            </nav>
+
+            <div class="theme-switch-container">
+                <label class="theme-switch" for="theme-checkbox">
+                    <input type="checkbox" id="theme-checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span class="theme-label">Mode Gelap</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h2>Generator QR & QRIS Terlengkap</h2>
+                    <p>Buat QR code dan QRIS dengan mudah. Dukung berbagai konten, kustomisasi warna, logo, dan banyak lagi.</p>
+                    <div class="hero-buttons">
+                        <a href="#generate" class="btn btn-primary">Buat QR Code</a>
+                        <a href="#tutorial" class="btn btn-secondary">Lihat Tutorial</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="placeholder-hero.png" alt="Ilustrasi QR Code">
+                </div>
+            </div>
+            
+            <!-- Quick Contact Buttons -->
+            <div class="quick-contact">
+                <a href="https://wa.me/628123456789" class="whatsapp-btn" target="_blank">
+                    <img src="whatsapp-icon.png" alt="WhatsApp">
+                    <span>Hubungi Kami</span>
+                </a>
+                <a href="#kontak" class="contact-btn">
+                    <img src="contact-icon.png" alt="Contact">
+                    <span>Kontak</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section with Simplified Content -->
+        <section id="fitur" class="features-section">
+            <div class="section-header">
+                <h2>Fitur Utama</h2>
+                <p>Semua yang Anda butuhkan untuk QR code berkualitas</p>
+            </div>
+            
+            <div class="features-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="payment">Pembayaran</button>
+                <button class="filter-btn" data-filter="business">Bisnis</button>
+                <button class="filter-btn" data-filter="personal">Personal</button>
+                <button class="filter-btn" data-filter="social">Media Sosial</button>
+            </div>
+            
+            <div class="features-container">
+                <div class="feature-card" data-category="payment">
+                    <div class="feature-icon">
+                        <img src="qris-icon.png" alt="QRIS Icon">
+                    </div>
+                    <h3>QRIS</h3>
+                    <p>Pembayaran digital standar BI</p>
+                    <a href="#generate-qris" class="feature-link">Buat QRIS</a>
+                </div>
+                
+                <div class="feature-card" data-category="business personal">
+                    <div class="feature-icon">
+                        <img src="url-icon.png" alt="URL Icon">
+                    </div>
+                    <h3>URL & Link</h3>
+                    <p>Website & media sosial</p>
+                    <a href="#generate-url" class="feature-link">Buat QR URL</a>
+                </div>
+                
+                <div class="feature-card" data-category="personal">
+                    <div class="feature-icon">
+                        <img src="text-icon.png" alt="Text Icon">
+                    </div>
+                    <h3>Teks</h3>
+                    <p>Pesan & informasi</p>
+                    <a href="#generate-text" class="feature-link">Buat QR Teks</a>
+                </div>
+                
+                <div class="feature-card" data-category="business personal">
+                    <div class="feature-icon">
+                        <img src="vcard-icon.png" alt="vCard Icon">
+                    </div>
+                    <h3>vCard</h3>
+                    <p>Informasi kontak digital</p>
+                    <a href="#generate-vcard" class="feature-link">Buat QR vCard</a>
+                </div>
+                
+                <div class="feature-card" data-category="personal">
+                    <div class="feature-icon">
+                        <img src="wifi-icon.png" alt="WiFi Icon">
+                    </div>
+                    <h3>WiFi</h3>
+                    <p>Koneksi jaringan WiFi</p>
+                    <a href="#generate-wifi" class="feature-link">Buat QR WiFi</a>
+                </div>
+                
+                <div class="feature-card" data-category="business personal">
+                    <div class="feature-icon">
+                        <img src="email-icon.png" alt="Email Icon">
+                    </div>
+                    <h3>Email</h3>
+                    <p>Alamat email otomatis</p>
+                    <a href="#generate-email" class="feature-link">Buat QR Email</a>
+                </div>
+                
+                <div class="feature-card" data-category="personal">
+                    <div class="feature-icon">
+                        <img src="sms-icon.png" alt="SMS Icon">
+                    </div>
+                    <h3>SMS</h3>
+                    <p>Pesan singkat</p>
+                    <a href="#generate-sms" class="feature-link">Buat QR SMS</a>
+                </div>
+                
+                <div class="feature-card" data-category="business personal">
+                    <div class="feature-icon">
+                        <img src="location-icon.png" alt="Location Icon">
+                    </div>
+                    <h3>Lokasi</h3>
+                    <p>Koordinat lokasi</p>
+                    <a href="#generate-location" class="feature-link">Buat QR Lokasi</a>
+                </div>
+                
+                <!-- Additional Features (Collapsed by Default) -->
+                <div class="more-features" id="more-features">
+                    <div class="feature-card" data-category="business personal">
+                        <div class="feature-icon">
+                            <img src="event-icon.png" alt="Event Icon">
+                        </div>
+                        <h3>Event</h3>
+                        <p>Acara kalender</p>
+                        <a href="#generate-event" class="feature-link">Buat QR Event</a>
+                    </div>
+                    
+                    <div class="feature-card" data-category="payment">
+                        <div class="feature-icon">
+                            <img src="crypto-icon.png" alt="Crypto Icon">
+                        </div>
+                        <h3>Cryptocurrency</h3>
+                        <p>Pembayaran crypto</p>
+                        <a href="#generate-crypto" class="feature-link">Buat QR Crypto</a>
+                    </div>
+                    
+                    <div class="feature-card" data-category="social">
+                        <div class="feature-icon">
+                            <img src="whatsapp-icon.png" alt="WhatsApp Icon">
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Chat langsung</p>
+                        <a href="#generate-whatsapp" class="feature-link">Buat QR WhatsApp</a>
+                    </div>
+                    
+                    <div class="feature-card" data-category="business personal">
+                        <div class="feature-icon">
+                            <img src="phone-icon.png" alt="Phone Icon">
+                        </div>
+                        <h3>Telepon</h3>
+                        <p>Panggilan otomatis</p>
+                        <a href="#generate-phone" class="feature-link">Buat QR Telepon</a>
+                    </div>
+                    
+                    <div class="feature-card" data-category="business social">
+                        <div class="feature-icon">
+                            <img src="image-icon.png" alt="Image Icon">
+                        </div>
+                        <h3>Gambar</h3>
+                        <p>Tautan gambar</p>
+                        <a href="#generate-image" class="feature-link">Buat QR Gambar</a>
+                    </div>
+                </div>
+                
+                <button id="show-more-features" class="show-more-btn">Lihat Semua Fitur</button>
+            </div>
+        </section>
+
+        <!-- Generate QR Section with Compact Tabs -->
+        <section id="generate" class="generate-section">
+            <div class="section-header">
+                <h2>Buat QR Code</h2>
+                <p>Pilih jenis QR code yang Anda butuhkan</p>
+            </div>
+            
+            <div class="generate-container">
+                <!-- Tab Navigation - Simplified Horizontal Scrollable -->
+                <div class="tab-container">
+                    <div class="tab-nav">
+                        <button class="tab-button active" data-tab="qr-standard">QR Standar</button>
+                        <button class="tab-button" data-tab="qr-qris">QRIS</button>
+                        <button class="tab-button" data-tab="qr-url">URL</button>
+                        <button class="tab-button" data-tab="qr-text">Teks</button>
+                        <button class="tab-button" data-tab="qr-vcard">vCard</button>
+                        <button class="tab-button" data-tab="qr-wifi">WiFi</button>
+                        <button class="tab-button" data-tab="qr-email">Email</button>
+                        <button class="tab-button" data-tab="qr-sms">SMS</button>
+                        <button class="tab-button" data-tab="qr-location">Lokasi</button>
+                        <button class="tab-button" data-tab="qr-more">Lainnya</button>
+                    </div>
+                    
+                    <!-- Tab Content Panels -->
+                    <div class="tab-content-container">
+                        <!-- Standard QR Tab -->
+                        <div class="tab-content active" id="qr-standard-content">
+                            <div class="form-group">
+                                <label for="standard-content">Konten (Teks atau URL):</label>
+                                <textarea id="standard-content" rows="3" placeholder="Masukkan konten QR code disini..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- QRIS Tab -->
+                        <div class="tab-content" id="qr-qris-content">
+                            <div class="qris-info-box">
+                                <h3>QRIS (QR Code Indonesian Standard)</h3>
+                                <p>Standar QR Code pembayaran digital Indonesia oleh Bank Indonesia.</p>
+                            </div>
+                            
+                            <div class="qris-form">
+                                <div class="form-group">
+                                    <label for="qris-merchant-id">ID Merchant:</label>
+                                    <input type="text" id="qris-merchant-id" placeholder="ID Merchant QRIS">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="qris-merchant-name">Nama Merchant:</label>
+                                    <input type="text" id="qris-merchant-name" placeholder="Nama Bisnis/Toko">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="qris-amount">Nominal (opsional):</label>
+                                    <input type="number" id="qris-amount" placeholder="Kosongkan untuk QR statis">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="qris-type">Tipe QRIS:</label>
+                                    <select id="qris-type">
+                                        <option value="static">Statis (Nominal diisi pembeli)</option>
+                                        <option value="dynamic">Dinamis (Nominal sudah terisi)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="qris-provider">Penyedia Layanan:</label>
+                                    <select id="qris-provider">
+                                        <option value="general">Umum (Semua Aplikasi)</option>
+                                        <option value="gopay">GoPay</option>
+                                        <option value="ovo">OVO</option>
+                                        <option value="dana">DANA</option>
+                                        <option value="shopeepay">ShopeePay</option>
+                                        <option value="linkaja">LinkAja</option>
+                                        <option value="bca">BCA</option>
+                                        <option value="bri">BRI</option>
+                                        <option value="bni">BNI</option>
+                                        <option value="mandiri">Mandiri</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- URL Tab -->
+                        <div class="tab-content" id="qr-url-content">
+                            <div class="form-group">
+                                <label for="url-input">URL/Tautan:</label>
+                                <input type="url" id="url-input" placeholder="https://www.example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="url-tracking">Parameter Tracking (opsional):</label>
+                                <input type="text" id="url-tracking" placeholder="utm_source=qr&utm_medium=print">
+                            </div>
+                        </div>
+                        
+                        <!-- Text Tab -->
+                        <div class="tab-content" id="qr-text-content">
+                            <div class="form-group">
+                                <label for="text-input">Teks:</label>
+                                <textarea id="text-input" rows="5" placeholder="Masukkan teks yang ingin dikodekan..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- vCard Tab -->
+                        <div class="tab-content" id="qr-vcard-content">
+                            <div class="form-group">
+                                <label for="vcard-firstname">Nama Depan:</label>
+                                <input type="text" id="vcard-firstname" placeholder="Nama depan">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="vcard-lastname">Nama Belakang:</label>
+                                <input type="text" id="vcard-lastname" placeholder="Nama belakang">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="vcard-organization">Organisasi:</label>
+                                <input type="text" id="vcard-organization" placeholder="Organisasi/perusahaan">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="vcard-phone">Telepon:</label>
+                                <input type="tel" id="vcard-phone" placeholder="Nomor telepon">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="vcard-email">Email:</label>
+                                <input type="email" id="vcard-email" placeholder="Alamat email">
+                            </div>
+                            
+                            <button id="vcard-toggle-more" class="toggle-more-btn">Tampilkan Lainnya</button>
+                            
+                            <div id="vcard-more-fields" class="more-fields">
+                                <div class="form-group">
+                                    <label for="vcard-title">Jabatan:</label>
+                                    <input type="text" id="vcard-title" placeholder="Jabatan/posisi">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="vcard-website">Website:</label>
+                                    <input type="url" id="vcard-website" placeholder="URL website">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="vcard-address">Alamat:</label>
+                                    <textarea id="vcard-address" rows="3" placeholder="Alamat lengkap"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="vcard-note">Catatan:</label>
+                                    <textarea id="vcard-note" rows="2" placeholder="Catatan tambahan"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- WiFi Tab -->
+                        <div class="tab-content" id="qr-wifi-content">
+                            <div class="form-group">
+                                <label for="wifi-ssid">Nama WiFi (SSID):</label>
+                                <input type="text" id="wifi-ssid" placeholder="Nama WiFi">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="wifi-password">Password:</label>
+                                <input type="password" id="wifi-password" placeholder="Password WiFi">
+                                <div class="password-toggle">
+                                    <input type="checkbox" id="wifi-show-password">
+                                    <label for="wifi-show-password">Tampilkan password</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="wifi-encryption">Enkripsi:</label>
+                                <select id="wifi-encryption">
+                                    <option value="WPA">WPA/WPA2/WPA3</option>
+                                    <option value="WEP">WEP</option>
+                                    <option value="nopass">Tanpa Password</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="wifi-hidden">Jaringan Tersembunyi:</label>
+                                <div class="toggle-switch">
+                                    <input type="checkbox" id="wifi-hidden">
+                                    <label for="wifi-hidden"></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Email Tab -->
+                        <div class="tab-content" id="qr-email-content">
+                            <div class="form-group">
+                                <label for="email-address">Alamat Email:</label>
+                                <input type="email" id="email-address" placeholder="email@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email-subject">Subjek:</label>
+                                <input type="text" id="email-subject" placeholder="Subjek email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email-body">Isi Email:</label>
+                                <textarea id="email-body" rows="4" placeholder="Isi pesan email..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- SMS Tab -->
+                        <div class="tab-content" id="qr-sms-content">
+                            <div class="form-group">
+                                <label for="sms-phone">Nomor Telepon:</label>
+                                <input type="tel" id="sms-phone" placeholder="+628xxxxxxxxxx">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sms-message">Pesan SMS:</label>
+                                <textarea id="sms-message" rows="3" placeholder="Isi pesan SMS..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Location Tab -->
+                        <div class="tab-content" id="qr-location-content">
+                            <div class="form-group">
+                                <label for="location-method">Metode Input:</label>
+                                <select id="location-method">
+                                    <option value="coordinates">Koordinat (Latitude/Longitude)</option>
+                                    <option value="search">Pencarian Lokasi</option>
+                                    <option value="current">Lokasi Saat Ini</option>
+                                </select>
+                            </div>
+                            
+                            <div id="location-coordinates-container">
+                                <div class="form-group">
+                                    <label for="location-latitude">Latitude:</label>
+                                    <input type="text" id="location-latitude" placeholder="Contoh: -6.1751">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="location-longitude">Longitude:</label>
+                                    <input type="text" id="location-longitude" placeholder="Contoh: 106.8650">
+                                </div>
+                            </div>
+                            
+                            <div id="location-search-container" style="display: none;">
+                                <div class="form-group">
+                                    <label for="location-search">Cari Lokasi:</label>
+                                    <input type="text" id="location-search" placeholder="Cari alamat atau tempat">
+                                    <button id="location-search-btn" class="btn btn-secondary">Cari</button>
+                                </div>
+                                
+                                <div id="location-map" class="map-container">
+                                    <!-- Map will be loaded here -->
+                                </div>
+                            </div>
+                            
+                            <div id="location-current-container" style="display: none;">
+                                <button id="location-current-btn" class="btn btn-secondary">Gunakan Lokasi Saat Ini</button>
+                                <div id="location-current-status" class="status-message"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- More Options Tab -->
+                        <div class="tab-content" id="qr-more-content">
+                            <div class="more-options-grid">
+                                <div class="more-option-card" data-option="event">
+                                    <img src="event-icon.png" alt="Event">
+                                    <h4>Event</h4>
+                                </div>
+                                
+                                <div class="more-option-card" data-option="crypto">
+                                    <img src="crypto-icon.png" alt="Cryptocurrency">
+                                    <h4>Cryptocurrency</h4>
+                                </div>
+                                
+                                <div class="more-option-card" data-option="whatsapp">
+                                    <img src="whatsapp-icon.png" alt="WhatsApp">
+                                    <h4>WhatsApp</h4>
+                                </div>
+                                
+                                <div class="more-option-card" data-option="phone">
+                                    <img src="phone-icon.png" alt="Phone">
+                                    <h4>Telepon</h4>
+                                </div>
+                                
+                                <div class="more-option-card" data-option="image">
+                                    <img src="image-icon.png" alt="Image">
+                                    <h4>Gambar</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Options - Simplified into Accordions -->
+                <div class="qr-design-options">
+                    <h3>Desain QR Code</h3>
+                    
+                    <div class="accordion">
+                        <!-- Basic Settings Accordion -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">Ukuran & Koreksi</h4>
+                            <div class="accordion-content">
+                                <div class="form-group">
+                                    <label for="qr-size">Ukuran QR Code:</label>
+                                    <input type="range" id="qr-size" min="100" max="1000" step="10" value="300">
+                                    <span id="qr-size-value">300 x 300 px</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="qr-correction">Level Koreksi:</label>
+                                    <select id="qr-correction">
+                                        <option value="L">Rendah (7%)</option>
+                                        <option value="M" selected>Sedang (15%)</option>
+                                        <option value="Q">Tinggi (25%)</option>
+                                        <option value="H">Sangat Tinggi (30%)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Colors Accordion -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">Warna & Tampilan</h4>
+                            <div class="accordion-content">
+                                <div class="form-group">
+                                    <label for="qr-foreground">Warna QR Code:</label>
+                                    <input type="color" id="qr-foreground" value="#000000">
+                                    <input type="text" id="qr-foreground-hex" value="#000000">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="qr-background">Warna Latar:</label>
+                                    <input type="color" id="qr-background" value="#FFFFFF">
+                                    <input type="text" id="qr-background-hex" value="#FFFFFF">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="qr-style">Gaya QR Code:</label>
+                                    <select id="qr-style">
+                                        <option value="square">Kotak (Standar)</option>
+                                        <option value="rounded">Rounded</option>
+                                        <option value="dots">Dots</option>
+                                        <option value="classy">Classy</option>
+                                        <option value="classy-rounded">Classy Rounded</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Logo Accordion -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">Logo & Watermark</h4>
+                            <div class="accordion-content">
+                                <div class="form-group">
+                                    <label for="qr-logo-upload">Upload Logo:</label>
+                                    <input type="file" id="qr-logo-upload" accept="image/*">
+                                </div>
+                                
+                                <div id="logo-preview-container" class="logo-preview-container" style="display: none;">
+                                    <img id="logo-preview" src="" alt="Logo Preview">
+                                    <button id="remove-logo" class="btn btn-sm btn-danger">Hapus</button>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="qr-logo-size">Ukuran Logo:</label>
+                                    <input type="range" id="qr-logo-size" min="5" max="35" step="1" value="15">
+                                    <span id="qr-logo-size-value">15%</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="qr-logo-shape">Bentuk Logo:</label>
+                                    <select id="qr-logo-shape">
+                                        <option value="square">Kotak</option>
+                                        <option value="circle">Lingkaran</option>
+                                        <option value="rounded">Rounded Rectangle</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="qr-watermark-text">Watermark Teks:</label>
+                                    <input type="text" id="qr-watermark-text" placeholder="Teks watermark (opsional)">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Advanced Settings (Toggle) -->
+                        <button class="toggle-advanced-btn">Pengaturan Lanjutan</button>
+                        <div class="advanced-settings" style="display: none;">
+                            <!-- Frame Accordion -->
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">Frame & Border</h4>
+                                <div class="accordion-content">
+                                    <div class="form-group">
+                                        <label for="qr-frame-style">Gaya Frame:</label>
+                                        <select id="qr-frame-style">
+                                            <option value="none">Tanpa Frame</option>
+                                            <option value="square">Kotak</option>
+                                            <option value="rounded">Rounded</option>
+                                            <option value="circle">Lingkaran</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="qr-frame-color">Warna Frame:</label>
+                                        <input type="color" id="qr-frame-color" value="#000000">
+                                        <input type="text" id="qr-frame-color-hex" value="#000000">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="qr-frame-text">Teks di Frame:</label>
+                                        <input type="text" id="qr-frame-text" placeholder="Teks pada frame (opsional)">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="qr-padding">Padding QR Code:</label>
+                                        <input type="range" id="qr-padding" min="0" max="50" step="1" value="10">
+                                        <span id="qr-padding-value">10px</span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="qr-border-width">Lebar Border:</label>
+                                        <input type="range" id="qr-border-width" min="0" max="20" step="1" value="2">
+                                        <span id="qr-border-width-value">2px</span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="qr-border-style">Gaya Border:</label>
+                                        <select id="qr-border-style">
+                                            <option value="solid">Solid</option>
+                                            <option value="dashed">Dashed</option>
+                                            <option value="dotted">Dotted</option>
+                                            <option value="double">Double</option>
+                                            <option value="none">Tanpa Border</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Effects Accordion -->
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">Efek & Animasi</h4>
+                                <div class="accordion-content">
+                                    <div class="form-group">
+                                        <label for="qr-effect">Efek Visual:</label>
+                                        <select id="qr-effect">
+                                            <option value="none">Tanpa Efek</option>
+                                            <option value="shadow">Bayangan</option>
+                                            <option value="gradient">Gradient</option>
+                                            <option value="pattern">Pattern</option>
+                                            <option value="3d">3D</option>
+                                            <option value="neon">Neon Glow</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="qr-animation">Animasi (GIF):</label>
+                                        <select id="qr-animation">
+                                            <option value="none">Tanpa Animasi</option>
+                                            <option value="pulse">Pulse</option>
+                                            <option value="fade">Fade</option>
+                                            <option value="rotate">Rotate</option>
+                                            <option value="scanner">Scanner</option>
+                                            <option value="ripple">Ripple</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QR Code Preview & Actions -->
+                <div class="qr-preview-container">
+                    <h3>Preview QR Code</h3>
+                    
+                    <div class="preview-mode-toggle">
+                        <button class="preview-mode-btn active" data-mode="normal">Normal</button>
+                        <button class="preview-mode-btn" data-mode="device">Device</button>
+                        <button class="preview-mode-btn" data-mode="print">Print</button>
+                    </div>
+                    
+                    <div class="qr-preview" id="qr-preview-normal">
+                        <div class="qr-loading-spinner">
+                            <div class="spinner"></div>
+                            <span>Generating QR Code...</span>
+                        </div>
+                        <div id="qr-container">
+                            <!-- The generated QR code will be inserted here -->
+                        </div>
+                    </div>
+                    
+                    <div class="qr-preview" id="qr-preview-device" style="display: none;">
+                        <div class="device-frame phone">
+                            <div class="device-screen">
+                                <div class="device-status-bar"></div>
+                                <div class="device-camera-app">
+                                    <div class="camera-viewfinder"></div>
+                                    <div class="camera-qr-container">
+                                        <div id="qr-container-device"></div>
+                                    </div>
+                                    <div class="camera-controls"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="qr-preview" id="qr-preview-print" style="display: none;">
+                        <div class="print-preview">
+                            <div class="print-page">
+                                <div id="qr-container-print"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="qr-status-container">
+                        <div class="qr-status">
+                            <div class="status-indicator" id="qr-status-indicator"></div>
+                            <span id="qr-status-message"></span>
+                        </div>
+                        
+                        <div class="qr-scan-test">
+                            <button id="test-scan-btn" class="btn btn-secondary modal-trigger" data-modal-id="scanner-modal">Test Scanner</button>
+                        </div>
+                    </div>
+                    
+                    <div class="qr-action-buttons">
+                        <button id="generate-qr-btn" class="btn btn-primary">Generate QR Code</button>
+                        <button id="download-qr-btn" class="btn btn-secondary modal-trigger" data-modal-id="download-options-panel">Download</button>
+                        <button id="share-qr-btn" class="btn btn-secondary modal-trigger" data-modal-id="share-options-panel">Share</button>
+                        <button id="print-qr-btn" class="btn btn-secondary">Print</button>
+                        <button id="save-qr-btn" class="btn btn-secondary modal-trigger" data-modal-id="save-qr-modal">Simpan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Templates Section with Enhanced Search and Filter -->
+        <section id="templates" class="templates-section">
+            <div class="section-header">
+                <h2>Template QR Code</h2>
+                <p>Pilih template siap pakai</p>
+            </div>
+            
+            <div class="templates-filter-container">
+                <div class="templates-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="business">Bisnis</button>
+                    <button class="filter-btn" data-filter="social">Media Sosial</button>
+                    <button class="filter-btn" data-filter="payment">Pembayaran</button>
+                    <button class="filter-btn" data-filter="event">Event</button>
+                    <button class="filter-btn" data-filter="personal">Personal</button>
+                </div>
+                
+                <div class="templates-search">
+                    <input type="text" id="template-search" placeholder="Cari template...">
+                    <button id="template-search-btn">Cari</button>
+                </div>
+            </div>
+            
+            <div class="templates-grid">
+                <!-- Template cards with clickable elements -->
+                <div class="template-card" data-category="business payment">
+                    <div class="template-card-preview">
+                        <img src="template-qris-payment.png" alt="QRIS Payment Template">
+                    </div>
+                    <div class="template-card-info">
+                        <h3>QRIS Payment</h3>
+                        <p>Template pembayaran QRIS</p>
+                        <div class="template-card-actions">
+                            <button class="btn btn-sm btn-primary use-template-btn" data-template-id="qris-payment">Gunakan</button>
+                            <button class="btn btn-sm btn-secondary preview-template-btn modal-trigger" data-modal-id="template-preview-modal" data-template-id="qris-payment">Preview</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="business personal">
+                    <div class="template-card-preview">
+                        <img src="template-business-card.png" alt="Business Card Template">
+                    </div>
+                    <div class="template-card-info">
+                        <h3>Business Card</h3>
+                        <p>Template kartu nama digital</p>
+                        <div class="template-card-actions">
+                            <button class="btn btn-sm btn-primary use-template-btn" data-template-id="business-card">Gunakan</button>
+                            <button class="btn btn-sm btn-secondary preview-template-btn modal-trigger" data-modal-id="template-preview-modal" data-template-id="business-card">Preview</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="social marketing">
+                    <div class="template-card-preview">
+                        <img src="template-instagram.png" alt="Instagram Template">
+                    </div>
+                    <div class="template-card-info">
+                        <h3>Instagram Profile</h3>
+                        <p>Template profil Instagram</p>
+                        <div class="template-card-actions">
+                            <button class="btn btn-sm btn-primary use-template-btn" data-template-id="instagram">Gunakan</button>
+                            <button class="btn btn-sm btn-secondary preview-template-btn modal-trigger" data-modal-id="template-preview-modal" data-template-id="instagram">Preview</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="template-card" data-category="business utility">
+                    <div class="template-card-preview">
+                        <img src="template-wifi.png" alt="WiFi Template">
+                    </div>
+                    <div class="template-card-info">
+                        <h3>WiFi Connect</h3>
+                        <p>Template koneksi WiFi</p>
+                        <div class="template-card-actions">
+                            <button class="btn btn-sm btn-primary use-template-btn" data-template-id="wifi">Gunakan</button>
+                            <button class="btn btn-sm btn-secondary preview-template-btn modal-trigger" data-modal-id="template-preview-modal" data-template-id="wifi">Preview</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="template-card" data-category="event marketing">
+                    <div class="template-card-preview">
+                        <img src="template-event.png" alt="Event Template">
+                    </div>
+                    <div class="template-card-info">
+                        <h3>Event RSVP</h3>
+                        <p>Template acara & RSVP</p>
+                        <div class="template-card-actions">
+                            <button class="btn btn-sm btn-primary use-template-btn" data-template-id="event">Gunakan</button>
+                            <button class="btn btn-sm btn-secondary preview-template-btn modal-trigger" data-modal-id="template-preview-modal" data-template-id="event">Preview</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="business payment">
+                    <div class="template-card-preview">
+                        <img src="template-e-commerce.png" alt="E-commerce Template">
+                    </div>
+                    <div class="template-card-info">
+                        <h3>E-commerce</h3>
+                        <p>Template produk online</p>
+                        <div class="template-card-actions">
+                            <button class="btn btn-sm btn-primary use-template-btn" data-template-id="e-commerce">Gunakan</button>
+                            <button class="btn btn-sm btn-secondary preview-template-btn modal-trigger" data-modal-id="template-preview-modal" data-template-id="e-commerce">Preview</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="social">
+                    <div class="template-card-preview">
+                        <img src="template-youtube.png" alt="YouTube Template">
+                    </div>
+                    <div class="template-card-info">
+                        <h3>YouTube Channel</h3>
+                        <p>Template channel YouTube</p>
+                        <div class="template-card-actions">
+                            <button class="btn btn-sm btn-primary use-template-btn" data-template-id="youtube">Gunakan</button>
+                            <button class="btn btn-sm btn-secondary preview-template-btn modal-trigger" data-modal-id="template-preview-modal" data-template-id="youtube">Preview</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="personal">
+                    <div class="template-card-preview">
+                        <img src="template-portfolio.png" alt="Portfolio Template">
+                    </div>
+                    <div class="template-card-info">
+                        <h3>Portfolio</h3>
+                        <p>Template portofolio pribadi</p>
+                        <div class="template-card-actions">
+                            <button class="btn btn-sm btn-primary use-template-btn" data-template-id="portfolio">Gunakan</button>
+                            <button class="btn btn-sm btn-secondary preview-template-btn modal-trigger" data-modal-id="template-preview-modal" data-template-id="portfolio">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="templates-pagination">
+                <button class="pagination-btn" data-page="prev">Sebelumnya</button>
+                <span class="pagination-info">Halaman 1 dari 3</span>
+                <button class="pagination-btn" data-page="next">Selanjutnya</button>
+            </div>
+            
+            <button id="load-more-templates" class="load-more-btn">Muat Lebih Banyak Template</button>
+        </section>
+
+        <!-- Tutorial Section with Simplified Tabs -->
+        <section id="tutorial" class="tutorial-section">
+            <div class="section-header">
+                <h2>Tutorial</h2>
+                <p>Pelajari cara membuat QR code</p>
+            </div>
+            
+            <div class="tutorial-tabs">
+                <button class="tutorial-tab active" data-tutorial="qris">QRIS</button>
+                <button class="tutorial-tab" data-tutorial="basics">Dasar QR</button>
+                <button class="tutorial-tab" data-tutorial="design">Desain</button>
+                <button class="tutorial-tab" data-tutorial="advanced">Advanced</button>
+                <button class="tutorial-tab" data-tutorial="usage">Penggunaan</button>
+            </div>
+            
+            <div class="tutorial-content">
+                <div class="tutorial-panel active" id="tutorial-qris">
+                    <div class="tutorial-content-inner">
+                        <h3>Cara Membuat dan Menggunakan QRIS</h3>
+                        
+                        <div class="tutorial-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Apa itu QRIS?</h4>
+                                <p>QRIS (Quick Response Code Indonesian Standard) adalah standar nasional QR Code untuk pembayaran digital di Indonesia yang ditetapkan oleh Bank Indonesia.</p>
+                                <img src="tutorial-qris-intro.png" alt="Penjelasan QRIS" class="tutorial-image">
+                            </div>
+                        </div>
+                        
+                        <div class="tutorial-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Membuat QRIS untuk Bisnis</h4>
+                                <p>Untuk membuat QRIS, pilih tab QRIS pada menu, lalu isi informasi merchant seperti ID dan nama merchant.</p>
+                                <img src="tutorial-qris-create.png" alt="Membuat QRIS" class="tutorial-image">
+                            </div>
+                        </div>
+                        
+                        <div class="tutorial-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Kustomisasi QRIS</h4>
+                                <p>Tambahkan logo bisnis dan ubah warna QRIS untuk branding bisnis Anda.</p>
+                                <img src="tutorial-qris-customize.png" alt="Kustomisasi QRIS" class="tutorial-image">
+                            </div>
+                        </div>
+                        
+                        <div class="tutorial-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Menggunakan QRIS</h4>
+                                <p>Tampilkan QRIS di tempat kasir atau area pembayaran. Pelanggan dapat memindai QRIS menggunakan berbagai aplikasi pembayaran.</p>
+                                <img src="tutorial-qris-usage.png" alt="Penggunaan QRIS" class="tutorial-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tutorial-panel" id="tutorial-basics">
+                    <div class="tutorial-content-inner">
+                        <h3>Dasar-Dasar QR Code</h3>
+                        <p>Pelajari cara kerja QR Code dan jenis-jenisnya.</p>
+                        <!-- Content will be loaded or expanded -->
+                        <button class="load-tutorial-btn" data-tutorial="basics">Muat Tutorial</button>
+                    </div>
+                </div>
+                
+                <div class="tutorial-panel" id="tutorial-design">
+                    <div class="tutorial-content-inner">
+                        <h3>Mendesain QR Code Anda</h3>
+                        <p>Panduan menggunakan opsi warna, logo, dan frame.</p>
+                        <!-- Content will be loaded or expanded -->
+                        <button class="load-tutorial-btn" data-tutorial="design">Muat Tutorial</button>
+                    </div>
+                </div>
+                
+                <div class="tutorial-panel" id="tutorial-advanced">
+                    <div class="tutorial-content-inner">
+                        <h3>Fitur Lanjutan & Optimasi</h3>
+                        <p>Mempelajari level koreksi kesalahan, versi, dan fitur lainnya.</p>
+                        <!-- Content will be loaded or expanded -->
+                        <button class="load-tutorial-btn" data-tutorial="advanced">Muat Tutorial</button>
+                    </div>
+                </div>
+                
+                <div class="tutorial-panel" id="tutorial-usage">
+                    <div class="tutorial-content-inner">
+                        <h3>Penggunaan Praktis QR Code</h3>
+                        <p>Tips mencetak, memindai, dan melacak QR Code.</p>
+                        <!-- Content will be loaded or expanded -->
+                        <button class="load-tutorial-btn" data-tutorial="usage">Muat Tutorial</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section with Simplified Content -->
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2>Tentang QR Generator Pro</h2>
+                <p>Generator QR Code untuk segala kebutuhan</p>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-description">
+                    <h3>Apa itu QR Generator Pro?</h3>
+                    <p>QR Generator Pro adalah solusi lengkap untuk menghasilkan berbagai jenis QR code, termasuk QRIS untuk pembayaran digital di Indonesia.</p>
+                    
+                    <h3>Fitur Utama</h3>
+                    <ul class="feature-list">
+                        <li>Pembuatan QRIS sesuai standar Bank Indonesia</li>
+                        <li>Dukungan berbagai jenis konten: URL, Teks, vCard, WiFi, dll</li>
+                        <li>Kustomisasi: warna, ukuran, logo, frame</li>
+                        <li>Template siap pakai</li>
+                        <li>Ekspor ke berbagai format: PNG, SVG, PDF</li>
+                        <li>Analitik pemindaian QR code</li>
+                    </ul>
+                </div>
+                
+                <div class="about-image">
+                    <img src="about-image.png" alt="QR Generator Pro Dashboard">
+                </div>
+            </div>
+            
+            <div class="testimonials-container">
+                <h3>Testimoni Pengguna</h3>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p>"QR Generator Pro sangat membantu bisnis saya. Pelanggan selalu mengomentari betapa menariknya QR code kami dengan logo yang disesuaikan."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="testimonial-1.jpg" alt="Ahmad" class="author-image">
+                            <div class="author-info">
+                                <h4>Ahmad Riyadi</h4>
+                                <p>Pemilik Kafe</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-navigation">
+                        <button class="testimonial-prev">⟨</button>
+                        <div class="testimonial-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="testimonial-next">⟩</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (New) -->
+        <section id="kontak" class="contact-section">
+            <div class="section-header">
+                <h2>Hubungi Kami</h2>
+                <p>Ada pertanyaan atau butuh bantuan?</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <img src="email-icon.png" alt="Email">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@qrgeneratorpro.com">info@qrgeneratorpro.com</a></p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <img src="whatsapp-icon.png" alt="WhatsApp">
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/628123456789" target="_blank">+62 812-3456-789</a></p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <img src="phone-icon.png" alt="Phone">
+                        <h3>Telepon</h3>
+                        <p><a href="tel:+628123456789">+62 812-3456-789</a></p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <img src="location-icon.png" alt="Location">
+                        <h3>Alamat</h3>
+                        <p>Jl. Teknologi No. 123, Jakarta 12345</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Nama:</label>
+                            <input type="text" id="contact-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email:</label>
+                            <input type="email" id="contact-email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Subjek:</label>
+                            <input type="text" id="contact-subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Pesan:</label>
+                            <textarea id="contact-message" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="social-media">
+                <h3>Ikuti Kami</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#" target="_blank" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#" target="_blank" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#" target="_blank" class="social-icon"><img src="youtube-icon.png" alt="YouTube"></a>
+                    <a href="#" target="_blank" class="social-icon"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="footer-logo.png" alt="QR Generator Pro Logo">
+                <h2>QR Generator Pro</h2>
+                <p>Solusi QR Code Terlengkap di Indonesia</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h3>Produk</h3>
+                    <ul>
+                        <li><a href="#fitur">Fitur</a></li>
+                        <li><a href="#generate">Buat QR</a></li>
+                        <li><a href="#templates">Template</a></li>
+                        <li><a href="#tutorial">Tutorial</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h3>Perusahaan</h3>
+                    <ul>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                        <li><a href="#karir">Karir</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h3>Bantuan</h3>
+                    <ul>
+                        <li><a href="#help-modal" class="modal-trigger">Pusat Bantuan</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#tutorial">Tutorial</a></li>
+                        <li><a href="#kontak">Hubungi Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#syarat">Syarat & Ketentuan</a></li>
+                        <li><a href="#privasi">Kebijakan Privasi</a></li>
+                        <li><a href="#cookies">Cookies</a></li>
+                        <li><a href="#lisensi">Lisensi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 QR Generator Pro. All rights reserved.</p>
+            </div>
+            
+            <div class="language-selector">
+                <select id="language-select">
+                    <option value="id" selected>Bahasa Indonesia</option>
+                    <option value="en">English</option>
+                    <option value="ms">Bahasa Melayu</option>
+                    <option value="zh">中文</option>
+                    <option value="ja">日本語</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="#" id="back-to-top" class="float-btn back-to-top-btn">
+            <img src="up-arrow-icon.png" alt="Back to Top">
+        </a>
+        
+        <a href="https://wa.me/628123456789" class="float-btn whatsapp-float-btn" target="_blank">
+            <img src="whatsapp-icon.png" alt="WhatsApp">
+        </a>
+        
+        <a href="#kontak" class="float-btn contact-float-btn">
+            <img src="contact-icon.png" alt="Contact">
+        </a>
+    </div>
+
+    <!-- Modals -->
+    
+    <!-- Template Preview Modal -->
+    <div class="modal-container" id="template-preview-modal" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h3>Preview Template</h3>
+                <button class="modal-close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="template-preview-container">
+                    <img src="" alt="Template Preview" id="modal-template-preview">
+                </div>
+                <div class="template-info">
+                    <h4 id="modal-template-name">Nama Template</h4>
+                    <p id="modal-template-description">Deskripsi template akan ditampilkan di sini.</p>
+                    
+                    <div class="template-features">
+                        <h5>Fitur Template</h5>
+                        <ul id="modal-template-features">
+                            <!-- Features will be loaded dynamically -->
+                            <li>Contoh Fitur 1</li>
+                            <li>Contoh Fitur 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="modal-use-template-btn">Gunakan Template</button>
+                <button class="btn btn-secondary modal-close-btn">Batal</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scanner Modal -->
+    <div class="modal-container" id="scanner-modal" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>QR Scanner</h3>
+                <button class="modal-close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="scanner-container">
+                    <div class="scanner-video-container">
+                        <video id="scanner-video"></video>
+                        <div class="scanner-overlay">
+                            <div class="scanner-target"></div>
+                            <div class="scanner-laser"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="scanner-result-container">
+                        <h3>Hasil Scan</h3>
+                        <div id="scanner-result-content" class="scanner-result-content">
+                            <p class="placeholder-text">Arahkan kamera ke QR code untuk memindai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary modal-close-btn">Tutup Scanner</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Settings Modal -->
+    <div class="modal-container" id="settings-modal" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h3>Pengaturan</h3>
+                <button class="modal-close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-container">
+                    <div class="settings-group">
+                        <h4>Tampilan</h4>
+                        
+                        <div class="form-group">
+                            <label for="settings-theme">Tema:</label>
+                            <select id="settings-theme">
+                                <option value="auto">Auto (Sistem)</option>
+                                <option value="light">Terang</option>
+                                <option value="dark">Gelap</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="settings-accent-color">Warna Aksen:</label>
+                            <input type="color" id="settings-accent-color" value="#3498db">
+                        </div>
+                    </div>
+                    
+                    <div class="settings-group">
+                        <h4>QR Code Default</h4>
+                        
+                        <div class="form-group">
+                            <label for="settings-default-size">Ukuran Default:</label>
+                            <select id="settings-default-size">
+                                <option value="200">Kecil (200x200)</option>
+                                <option value="300" selected>Sedang (300x300)</option>
+                                <option value="400">Besar (400x400)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="settings-default-correction">Koreksi Kesalahan Default:</label>
+                            <select id="settings-default-correction">
+                                <option value="L">Rendah (7%)</option>
+                                <option value="M" selected>Sedang (15%)</option>
+                                <option value="Q">Tinggi (25%)</option>
+                                <option value="H">Sangat Tinggi (30%)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-group">
+                        <h4>Ekspor</h4>
+                        
+                        <div class="form-group">
+                            <label for="settings-default-format">Format Default:</label>
+                            <select id="settings-default-format">
+                                <option value="png" selected>PNG</option>
+                                <option value="svg">SVG</option>
+                                <option value="pdf">PDF</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="settings-save-btn">Simpan Pengaturan</button>
+                <button class="btn btn-secondary" id="settings-reset-btn">Reset ke Default</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Help Modal -->
+    <div class="modal-container" id="help-modal" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Bantuan</h3>
+                <button class="modal-close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="help-container">
+                    <div class="help-search">
+                        <input type="text" id="help-search" placeholder="Cari bantuan...">
+                        <button id="help-search-btn">Cari</button>
+                    </div>
+                    
+                    <div class="help-topics">
+                        <div class="help-topic">
+                            <h4>Cara Membuat QR Code</h4>
+                            <div class="help-topic-content">
+                                <p>Untuk membuat QR code, ikuti langkah-langkah berikut:</p>
+                                <ol>
+                                    <li>Pilih jenis QR code yang ingin Anda buat.</li>
+                                    <li>Masukkan konten yang ingin dikodekan.</li>
+                                    <li>Sesuaikan opsi desain sesuai kebutuhan.</li>
+                                    <li>Klik tombol "Generate QR Code".</li>
+                                    <li>Unduh atau bagikan QR code Anda.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="help-topic">
+                            <h4>Menggunakan Template</h4>
+                            <div class="help-topic-content">
+                                <p>Template mempercepat proses pembuatan QR code:</p>
+                                <ol>
+                                    <li>Buka bagian "Template".</li>
+                                    <li>Pilih kategori template yang sesuai.</li>
+                                    <li>Klik "Preview" untuk melihat template.</li>
+                                    <li>Klik "Gunakan" untuk mengaplikasikan.</li>
+                                    <li>Sesuaikan konten sesuai kebutuhan.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="help-topic">
+                            <h4>Menambahkan Logo ke QR Code</h4>
+                            <div class="help-topic-content">
+                                <p>Untuk menambahkan logo ke QR code:</p>
+                                <ol>
+                                    <li>Buka bagian "Logo & Watermark".</li>
+                                    <li>Klik "Upload Logo" dan pilih file gambar.</li>
+                                    <li>Sesuaikan ukuran logo dengan slider.</li>
+                                    <li>Pilih bentuk logo yang diinginkan.</li>
+                                    <li>Gunakan level koreksi kesalahan yang tinggi.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="help-topic">
+                            <h4>Fitur QRIS</h4>
+                            <div class="help-topic-content">
+                                <p>QRIS (QR Code Indonesian Standard) adalah standar nasional untuk pembayaran digital.</p>
+                                <p>Untuk membuat QRIS:</p>
+                                <ol>
+                                    <li>Pilih tab QRIS pada menu.</li>
+                                    <li>Masukkan ID Merchant dan nama merchant.</li>
+                                    <li>Pilih tipe QRIS (Statis/Dinamis).</li>
+                                    <li>Jika dinamis, masukkan nominal pembayaran.</li>
+                                    <li>Klik "Generate QR Code".</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="help-topic">
+                            <h4>Troubleshooting Scan Gagal</h4>
+                            <div class="help-topic-content">
+                                <p>Jika QR code sulit dipindai:</p>
+                                <ul>
+                                    <li>Gunakan level koreksi kesalahan yang lebih tinggi.</li>
+                                    <li>Kurangi ukuran logo (tidak lebih dari 25%).</li>
+                                    <li>Pastikan kontras warna QR code cukup tinggi.</li>
+                                    <li>Cetak dalam ukuran yang cukup besar.</li>
+                                    <li>Hindari pola kompleks pada background.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-btn">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Save QR Modal -->
+    <div class="modal-container" id="save-qr-modal" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h3>Simpan QR Code</h3>
+                <button class="modal-close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Simpan QR code untuk diakses kembali nanti.</p>
+                <div class="form-group">
+                    <label for="save-qr-name">Nama QR Code:</label>
+                    <input type="text" id="save-qr-name" placeholder="Contoh: QR Pembayaran Toko A">
+                </div>
+                <div class="form-group">
+                    <label for="save-qr-folder">Folder:</label>
+                    <select id="save-qr-folder">
+                        <option value="">Tanpa Folder</option>
+                        <option value="bisnis">Bisnis</option>
+                        <option value="personal">Personal</option>
+                        <option value="event">Event</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="save-qr-tags">Tag:</label>
+                    <input type="text" id="save-qr-tags" placeholder="Tag dipisahkan koma">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="confirm-save-qr">Simpan</button>
+                <button class="btn btn-secondary modal-close-btn">Batal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Download Options Panel -->
+    <div class="modal-container" id="download-options-panel" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h3>Download QR Code</h3>
+                <button class="modal-close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="download-format-options">
+                    <h4>Format</h4>
+                    <div class="format-options-grid">
+                        <div class="format-option">
+                            <input type="radio" id="format-png" name="download-format" value="png" checked>
+                            <label for="format-png">PNG</label>
+                        </div>
+                        
+                        <div class="format-option">
+                            <input type="radio" id="format-svg" name="download-format" value="svg">
+                            <label for="format-svg">SVG</label>
+                        </div>
+                        
+                        <div class="format-option">
+                            <input type="radio" id="format-pdf" name="download-format" value="pdf">
+                            <label for="format-pdf">PDF</label>
+                        </div>
+                        
+                        <div class="format-option">
+                            <input type="radio" id="format-eps" name="download-format" value="eps">
+                            <label for="format-eps">EPS</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quality-options">
+                    <h4>Kualitas</h4>
+                    <div class="form-group">
+                        <select id="download-quality">
+                            <option value="low">Rendah (72 DPI)</option>
+                            <option value="medium" selected>Sedang (150 DPI)</option>
+                            <option value="high">Tinggi (300 DPI)</option>
+                            <option value="print">Print (600 DPI)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="size-options">
+                    <h4>Ukuran</h4>
+                    <div class="form-group">
+                        <input type="number" id="download-width" min="100" max="2000" value="300">
+                        <span>×</span>
+                        <input type="number" id="download-height" min="100" max="2000" value="300">
+                        <span>px</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="download-confirm" class="btn btn-primary">Download</button>
+                <button id="download-cancel" class="btn btn-secondary modal-close-btn">Batal</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Share Options Panel -->
+    <div class="modal-container" id="share-options-panel" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h3>Bagikan QR Code</h3>
+                <button class="modal-close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="share-url-container">
+                    <input type="text" id="share-url" readonly placeholder="Generate QR code untuk mendapatkan URL">
+                    <button id="copy-url-btn" class="btn btn-sm">Copy</button>
+                </div>
+                
+                <div class="share-options">
+                    <button class="share-btn" data-platform="facebook">
+                        <img src="facebook-icon.png" alt="Facebook">
+                        Facebook
+                    </button>
+                    
+                    <button class="share-btn" data-platform="twitter">
+                        <img src="twitter-icon.png" alt="Twitter">
+                        Twitter
+                    </button>
+                    
+                    <button class="share-btn" data-platform="whatsapp">
+                        <img src="whatsapp-icon.png" alt="WhatsApp">
+                        WhatsApp
+                    </button>
+                    
+                    <button class="share-btn" data-platform="telegram">
+                        <img src="telegram-icon.png" alt="Telegram">
+                        Telegram
+                    </button>
+                    
+                    <button class="share-btn" data-platform="email">
+                        <img src="email-icon.png" alt="Email">
+                        Email
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="share-close" class="btn btn-secondary modal-close-btn">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification/Status Bar -->
+    <div id="notification-bar" class="notification-bar">
+        <div class="notification-message">
+            <img src="info-icon.png" alt="Info">
+            <span id="notification-text">QR Code berhasil dibuat!</span>
+        </div>
+        <button id="notification-close" class="notification-close">×</button>
+    </div>
+
+    <!-- Custom JS Files (commented out for HTML-only version) -->
+   <script src="js/script.js"></script>
+</body>
+</html>
